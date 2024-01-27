@@ -10,7 +10,9 @@ html {
 
 body {
   min-width: 32rem;
+  font-family: "IBM Plex Sans", sans-serif;
   font-size: 1.6rem;
+  background-color: #FFEFE7;
 }
 
 h1,
@@ -33,4 +35,28 @@ ul {
 
 a {
   text-decoration: none;
+}
+
+.container {
+  width: 95%;
+  max-width: 144rem;
+  margin: 0 auto;
+}
+
+/* HEADER */
+.header {
+  padding: 1.6rem 0;
+}
+.header__logo {
+  font-size: 2rem;
+  line-height: 2.4rem;
+  font-weight: 500;
+  color: #7C6A0A;
+}
+.header__links {
+  display: none;
+}
+.header__menu {
+  display: flex;
+  justify-content: space-between;
 }/*# sourceMappingURL=style.css.map */
