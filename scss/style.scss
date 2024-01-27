@@ -36,6 +36,7 @@ body {
   min-width: 32rem;
   font-family: $font-family;
   font-size: 1.6rem;
+  color: $primary-text-color;
   background-color: $primary-color;
 }
 
@@ -67,6 +68,18 @@ a {
   margin: 0 auto;
 }
 
+.title {
+  font-size: $size-title;
+  font-weight: $weight-title;
+  line-height: $line-height-title;
+}
+
+.text {
+  font-size: $size-text;
+  font-weight: $weight-text;
+  line-height: $line-height-text;
+}
+
 /* HEADER */
 
 .header {
@@ -76,7 +89,6 @@ a {
     font-size: 2rem;
     line-height: 2.4rem;
     font-weight: 500;
-    color: $primary-text-color;
   }
 
   &__links {
