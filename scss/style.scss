@@ -36,11 +36,11 @@ $font-family: 'IBM Plex Sans', sans-serif;
 
 }
 
-@mixin card {
+@mixin card($color-fondo, $colortexto: null) {
   scroll-snap-align: center;
   padding: 3.2rem 2.4rem;
   border-radius: .8rem;
-  background-color: $secundary-color;
+  background-color: $color-fondo;
 
   &__figure {
     width: 100%;
@@ -55,10 +55,12 @@ $font-family: 'IBM Plex Sans', sans-serif;
   &__subtitle {
     @include font-subtitle();
     margin-bottom: .8rem;
+    color: $colortexto;
   }
 
   &__text {
     @include font-text();
+    color: $colortexto;
   }
 }
 
@@ -100,10 +102,6 @@ ul {
 
 a {
   text-decoration: none;
-}
-
-.card {
-  @include card();
 }
 
 /* HEADER */
@@ -194,38 +192,35 @@ a {
     scroll-snap-type: x mandatory;
   }
 
+  .card {
+    @include card($secundary-color);
+  }
 }
 
 /* HOGAR */
 
 .hogar {
-  @extend .salud;
+  @extend .hero;
+
+  &__container {
+    @include container();
+  }
 
   &__title {
-    @extend .salud__title;
-    margin-bottom: 3.2rem;
+    @include font-title();
   }
 
   &__cards {
-    // @extend .salud__cards;
+    margin: 0 auto;
+    padding-bottom: 2rem;
+    display: grid;
+    grid-template-columns: repeat(6, 17.8rem);
+    gap: 2.6rem;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
   }
 
-  &__card {
-    // @extend .salud__card;
-    background-color: $tertiary-color;
-  }
-
-  &__figure {
-    // @extend .salud__figure;
-  }
-
-  &__subtitle {
-    // @extend .salud__subtitle;
-    color: $primary-color;
-  }
-
-  &__text {
-    // @extend .salud__text;
-    color: $primary-color;
+  .card {
+    @include card($tertiary-color, $primary-color);
   }
 }

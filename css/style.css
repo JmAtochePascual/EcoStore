@@ -40,32 +40,6 @@ a {
   text-decoration: none;
 }
 
-.card {
-  scroll-snap-align: center;
-  padding: 3.2rem 2.4rem;
-  border-radius: 0.8rem;
-  background-color: #FFDAC6;
-}
-.card__figure {
-  width: 100%;
-  margin-bottom: 1.6rem;
-}
-.card__img {
-  width: 100%;
-  height: auto;
-}
-.card__subtitle {
-  font-size: 1.3rem;
-  font-weight: 700;
-  line-height: 1.7rem;
-  margin-bottom: 0.8rem;
-}
-.card__text {
-  font-size: 1.4rem;
-  font-weight: 400;
-  line-height: 1.8rem;
-}
-
 /* HEADER */
 .header {
   margin-bottom: 1rem;
@@ -88,7 +62,7 @@ a {
 }
 
 /* HERO */
-.hero, .salud, .hogar {
+.hero, .hogar, .salud {
   padding-bottom: 6rem;
 }
 .hero__container {
@@ -133,7 +107,7 @@ a {
   max-width: 144rem;
   margin: 0 auto;
 }
-.salud__title, .hogar__title {
+.salud__title {
   margin-bottom: 3.2rem;
   font-size: 2.2rem;
   font-weight: 500;
@@ -148,17 +122,77 @@ a {
   overflow-x: scroll;
   scroll-snap-type: x mandatory;
 }
+.salud .card {
+  scroll-snap-align: center;
+  padding: 3.2rem 2.4rem;
+  border-radius: 0.8rem;
+  background-color: #FFDAC6;
+}
+.salud .card__figure {
+  width: 100%;
+  margin-bottom: 1.6rem;
+}
+.salud .card__img {
+  width: 100%;
+  height: auto;
+}
+.salud .card__subtitle {
+  font-size: 1.3rem;
+  font-weight: 700;
+  line-height: 1.7rem;
+  margin-bottom: 0.8rem;
+}
+.salud .card__text {
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.8rem;
+}
 
 /* HOGAR */
+.hogar__container {
+  width: 95%;
+  max-width: 144rem;
+  margin: 0 auto;
+}
 .hogar__title {
   margin-bottom: 3.2rem;
+  font-size: 2.2rem;
+  font-weight: 500;
+  line-height: 2.6rem;
 }
-.hogar__card {
+.hogar__cards {
+  margin: 0 auto;
+  padding-bottom: 2rem;
+  display: grid;
+  grid-template-columns: repeat(6, 17.8rem);
+  gap: 2.6rem;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+}
+.hogar .card {
+  scroll-snap-align: center;
+  padding: 3.2rem 2.4rem;
+  border-radius: 0.8rem;
   background-color: #BABD8D;
 }
-.hogar__subtitle {
+.hogar .card__figure {
+  width: 100%;
+  margin-bottom: 1.6rem;
+}
+.hogar .card__img {
+  width: 100%;
+  height: auto;
+}
+.hogar .card__subtitle {
+  font-size: 1.3rem;
+  font-weight: 700;
+  line-height: 1.7rem;
+  margin-bottom: 0.8rem;
   color: #FFEFE7;
 }
-.hogar__text {
+.hogar .card__text {
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.8rem;
   color: #FFEFE7;
 }/*# sourceMappingURL=style.css.map */
