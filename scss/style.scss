@@ -312,3 +312,34 @@ a {
     color: $orange-color;
   }
 }
+
+.footer {
+  padding: 3rem 0;
+  background-color: $orange-light-color;
+
+  &__container {
+    @include container();
+  }
+
+  &__logo {
+    @extend .header__logo;
+    margin-bottom: 2.4rem;
+    color: white;
+  }
+
+  &__links {
+    margin-bottom: 2.4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+  }
+
+  &__link {
+    color: white;
+  }
+
+  &__redes {
+    display: flex;
+    gap: 1.6rem;
+  }
+}
