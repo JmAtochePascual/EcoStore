@@ -14,9 +14,9 @@ $size-subtitle: 1.3rem;
 $weight-subtitle: 500;
 $line-height-subtitle: 1.7rem;
 
-$size-text: 1.2rem;
+$size-text: 1.4rem;
 $weight-text: 400;
-$line-height-text: 1.6rem;
+$line-height-text: 1.8rem;
 
 $size-text-small: .8rem;
 $weight-text--small: 400;
@@ -83,6 +83,7 @@ a {
 /* HEADER */
 
 .header {
+  margin-bottom: 1rem;
   padding: 1.6rem 0;
 
   &__logo {
@@ -98,5 +99,46 @@ a {
   &__menu {
     display: flex;
     justify-content: space-between;
+  }
+}
+
+/* HERO */
+
+.hero {
+  padding-bottom: 6rem;
+
+  &__container {
+    width: 90%;
+    max-width: 55rem;
+    display: grid;
+    gap: 1.6rem;
+  }
+
+  &__img {
+    width: 100%;
+    height: auto;
+  }
+
+  &__title {
+    margin-bottom: 1.2rem;
+    font-size: 2.8rem;
+    font-weight: 700;
+    line-height: 3.6rem;
+  }
+
+  &__text {
+    @extend .text;
+    margin-bottom: 2rem;
+  }
+
+  &__button {
+    max-width: 30rem;
+    margin: 0 auto;
+    padding: 1.2rem;
+    border-radius: 2rem;
+    display: block;
+    text-align: center;
+    color: white;
+    background-color: $orange-color;
   }
 }
