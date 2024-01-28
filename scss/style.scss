@@ -283,3 +283,32 @@ a {
     justify-items: center;
   }
 }
+
+/* ENCUENTRANOS */
+.encuentranos {
+  @extend .hero;
+
+  &__container {
+    @include container();
+  }
+
+  &__title {
+    @include font-title();
+  }
+
+  .encuentranos__figure {
+    max-width: 130rem;
+    margin: 0 auto 3.2rem;
+  }
+
+  &__lugar {
+    @include font-title();
+    margin-bottom: .8rem;
+    color: $orange-color;
+  }
+
+  &__direccion {
+    @include font-text();
+    color: $orange-color;
+  }
+}

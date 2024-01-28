@@ -62,7 +62,7 @@ a {
 }
 
 /* HERO */
-.hero, .estilos, .nosotros, .hogar, .salud {
+.hero, .encuentranos, .estilos, .nosotros, .hogar, .salud {
   padding-bottom: 6rem;
 }
 .hero__container {
@@ -250,4 +250,35 @@ a {
   grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
   gap: 1.6rem;
   justify-items: center;
+}
+
+/* ENCUENTRANOS */
+.encuentranos__container {
+  width: 95%;
+  max-width: 144rem;
+  margin: 0 auto;
+}
+.encuentranos__title {
+  margin-bottom: 3.2rem;
+  font-size: 2.2rem;
+  font-weight: 500;
+  line-height: 2.6rem;
+}
+.encuentranos .encuentranos__figure {
+  max-width: 130rem;
+  margin: 0 auto 3.2rem;
+}
+.encuentranos__lugar {
+  margin-bottom: 3.2rem;
+  font-size: 2.2rem;
+  font-weight: 500;
+  line-height: 2.6rem;
+  margin-bottom: 0.8rem;
+  color: #E86424;
+}
+.encuentranos__direccion {
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.8rem;
+  color: #E86424;
 }/*# sourceMappingURL=style.css.map */
