@@ -1,3 +1,5 @@
+/* MIXINS */
+/* Estilos para los titulos */
 * {
   margin: 0;
   padding: 0;
@@ -38,28 +40,17 @@ a {
   text-decoration: none;
 }
 
-.container {
-  width: 95%;
-  max-width: 144rem;
-  margin: 0 auto;
-}
-
-.title, .salud__title, .hogar__title {
-  font-size: 2.2rem;
-  font-weight: 500;
-  line-height: 2.6rem;
-}
-
-.text, .hero__text {
-  font-size: 1.4rem;
-  font-weight: 400;
-  line-height: 1.8rem;
-}
-
 /* HEADER */
 .header {
   margin-bottom: 1rem;
   padding: 1.6rem 0;
+}
+.header__menu {
+  width: 95%;
+  max-width: 144rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
 }
 .header__logo {
   font-size: 2rem;
@@ -68,10 +59,6 @@ a {
 }
 .header__links {
   display: none;
-}
-.header__menu {
-  display: flex;
-  justify-content: space-between;
 }
 
 /* HERO */
@@ -95,6 +82,9 @@ a {
   line-height: 3.6rem;
 }
 .hero__text {
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.8rem;
   margin-bottom: 2rem;
 }
 .hero__button {
@@ -110,6 +100,9 @@ a {
 
 /* SALUD */
 .salud__title, .hogar__title {
+  font-size: 2.2rem;
+  font-weight: 500;
+  line-height: 2.6rem;
   margin-bottom: 3.2rem;
 }
 .salud__cards, .hogar__cards {
@@ -137,9 +130,9 @@ a {
   line-height: 1.7rem;
 }
 .salud__text, .hogar__text {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   font-weight: 400;
-  line-height: 1.6rem;
+  line-height: 1.8rem;
 }
 
 /* HOGAR */
