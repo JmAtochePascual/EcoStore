@@ -11,16 +11,16 @@ $weight-title: 500;
 $line-height-title: 2.6rem;
 
 $size-subtitle: 1.3rem;
-$weight-subtitle: 500;
+$weight-subtitle: 700;
 $line-height-subtitle: 1.7rem;
 
 $size-text: 1.4rem;
 $weight-text: 400;
 $line-height-text: 1.8rem;
 
-$size-text-small: .8rem;
+$size-text-small: 1.2rem;
 $weight-text--small: 400;
-$line-height-text-small: 1.2rem;
+$line-height-text-small: 1.6rem;
 
 * {
   margin: 0;
@@ -140,5 +140,50 @@ a {
     text-align: center;
     color: white;
     background-color: $orange-color;
+  }
+}
+
+/* SALUD */
+
+.salud {
+  @extend .hero;
+
+  &__title {
+    @extend .title;
+    margin-bottom: 3.2rem;
+  }
+}
+
+.cards {
+  padding-bottom: 2rem;
+  display: grid;
+  grid-template-columns: repeat(6, 17.8rem);
+  gap: 2.6rem;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+}
+
+.card {
+  scroll-snap-align: center;
+  padding: 3.2rem 2.4rem;
+  border-radius: .8rem;
+  background-color: $secundary-color;
+
+  &__figure {
+    width: 13.2rem;
+    margin-bottom: .8rem;
+  }
+
+  &__title {
+    margin-bottom: .4rem;
+    font-size: $size-subtitle;
+    font-weight: $weight-subtitle;
+    line-height: $line-height-subtitle;
+  }
+
+  &__text {
+    font-size: $size-text-small;
+    font-weight: $weight-text--small;
+    line-height: $line-height-text-small;
   }
 }
