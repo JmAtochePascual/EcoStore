@@ -11,6 +11,7 @@ $font-family: 'IBM Plex Sans', sans-serif;
 
 /* Estilos para los titulos */
 @mixin font-title {
+  margin-bottom: 3.2rem;
   font-size: 2.2rem;
   font-weight: 500;
   line-height: 2.6rem;
@@ -35,6 +36,31 @@ $font-family: 'IBM Plex Sans', sans-serif;
 
 }
 
+@mixin card {
+  scroll-snap-align: center;
+  padding: 3.2rem 2.4rem;
+  border-radius: .8rem;
+  background-color: $secundary-color;
+
+  &__figure {
+    width: 100%;
+    margin-bottom: 1.6rem;
+  }
+
+  &__img {
+    width: 100%;
+    height: auto;
+  }
+
+  &__subtitle {
+    @include font-subtitle();
+    margin-bottom: .8rem;
+  }
+
+  &__text {
+    @include font-text();
+  }
+}
 
 * {
   margin: 0;
@@ -76,6 +102,9 @@ a {
   text-decoration: none;
 }
 
+.card {
+  @include card();
+}
 
 /* HEADER */
 
@@ -106,6 +135,7 @@ a {
   padding-bottom: 6rem;
 
   &__container {
+    @include container();
     width: 90%;
     max-width: 55rem;
     display: grid;
@@ -146,12 +176,16 @@ a {
 .salud {
   @extend .hero;
 
+  &__container {
+    @include container();
+  }
+
   &__title {
     @include font-title();
-    margin-bottom: 3.2rem;
   }
 
   &__cards {
+    margin: 0 auto;
     padding-bottom: 2rem;
     display: grid;
     grid-template-columns: repeat(6, 17.8rem);
@@ -160,26 +194,6 @@ a {
     scroll-snap-type: x mandatory;
   }
 
-  &__card {
-    scroll-snap-align: center;
-    padding: 3.2rem 2.4rem;
-    border-radius: .8rem;
-    background-color: $secundary-color;
-  }
-
-  &__figure {
-    width: 13.2rem;
-    margin-bottom: .8rem;
-  }
-
-  &__subtitle {
-    margin-bottom: .4rem;
-    @include font-subtitle();
-  }
-
-  &__text {
-    @include font-text()
-  }
 }
 
 /* HOGAR */
@@ -193,25 +207,25 @@ a {
   }
 
   &__cards {
-    @extend .salud__cards;
+    // @extend .salud__cards;
   }
 
   &__card {
-    @extend .salud__card;
+    // @extend .salud__card;
     background-color: $tertiary-color;
   }
 
   &__figure {
-    @extend .salud__figure;
+    // @extend .salud__figure;
   }
 
   &__subtitle {
-    @extend .salud__subtitle;
+    // @extend .salud__subtitle;
     color: $primary-color;
   }
 
   &__text {
-    @extend .salud__text;
+    // @extend .salud__text;
     color: $primary-color;
   }
 }

@@ -40,6 +40,32 @@ a {
   text-decoration: none;
 }
 
+.card {
+  scroll-snap-align: center;
+  padding: 3.2rem 2.4rem;
+  border-radius: 0.8rem;
+  background-color: #FFDAC6;
+}
+.card__figure {
+  width: 100%;
+  margin-bottom: 1.6rem;
+}
+.card__img {
+  width: 100%;
+  height: auto;
+}
+.card__subtitle {
+  font-size: 1.3rem;
+  font-weight: 700;
+  line-height: 1.7rem;
+  margin-bottom: 0.8rem;
+}
+.card__text {
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.8rem;
+}
+
 /* HEADER */
 .header {
   margin-bottom: 1rem;
@@ -66,6 +92,9 @@ a {
   padding-bottom: 6rem;
 }
 .hero__container {
+  width: 95%;
+  max-width: 144rem;
+  margin: 0 auto;
   width: 90%;
   max-width: 55rem;
   display: grid;
@@ -99,40 +128,25 @@ a {
 }
 
 /* SALUD */
+.salud__container {
+  width: 95%;
+  max-width: 144rem;
+  margin: 0 auto;
+}
 .salud__title, .hogar__title {
+  margin-bottom: 3.2rem;
   font-size: 2.2rem;
   font-weight: 500;
   line-height: 2.6rem;
-  margin-bottom: 3.2rem;
 }
-.salud__cards, .hogar__cards {
+.salud__cards {
+  margin: 0 auto;
   padding-bottom: 2rem;
   display: grid;
   grid-template-columns: repeat(6, 17.8rem);
   gap: 2.6rem;
   overflow-x: scroll;
   scroll-snap-type: x mandatory;
-}
-.salud__card, .hogar__card {
-  scroll-snap-align: center;
-  padding: 3.2rem 2.4rem;
-  border-radius: 0.8rem;
-  background-color: #FFDAC6;
-}
-.salud__figure, .hogar__figure {
-  width: 13.2rem;
-  margin-bottom: 0.8rem;
-}
-.salud__subtitle, .hogar__subtitle {
-  margin-bottom: 0.4rem;
-  font-size: 1.3rem;
-  font-weight: 700;
-  line-height: 1.7rem;
-}
-.salud__text, .hogar__text {
-  font-size: 1.4rem;
-  font-weight: 400;
-  line-height: 1.8rem;
 }
 
 /* HOGAR */
