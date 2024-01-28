@@ -152,29 +152,29 @@ a {
     @extend .title;
     margin-bottom: 3.2rem;
   }
-}
 
-.cards {
-  padding-bottom: 2rem;
-  display: grid;
-  grid-template-columns: repeat(6, 17.8rem);
-  gap: 2.6rem;
-  overflow-x: scroll;
-  scroll-snap-type: x mandatory;
-}
+  &__cards {
+    padding-bottom: 2rem;
+    display: grid;
+    grid-template-columns: repeat(6, 17.8rem);
+    gap: 2.6rem;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+  }
 
-.card {
-  scroll-snap-align: center;
-  padding: 3.2rem 2.4rem;
-  border-radius: .8rem;
-  background-color: $secundary-color;
+  &__card {
+    scroll-snap-align: center;
+    padding: 3.2rem 2.4rem;
+    border-radius: .8rem;
+    background-color: $secundary-color;
+  }
 
   &__figure {
     width: 13.2rem;
     margin-bottom: .8rem;
   }
 
-  &__title {
+  &__subtitle {
     margin-bottom: .4rem;
     font-size: $size-subtitle;
     font-weight: $weight-subtitle;
@@ -185,5 +185,42 @@ a {
     font-size: $size-text-small;
     font-weight: $weight-text--small;
     line-height: $line-height-text-small;
+  }
+}
+
+
+
+
+/* HOGAR */
+
+.hogar {
+  @extend .salud;
+
+  &__title {
+    @extend .salud__title;
+    margin-bottom: 3.2rem;
+  }
+
+  &__cards {
+    @extend .salud__cards;
+  }
+
+  &__card {
+    @extend .salud__card;
+    background-color: $tertiary-color;
+  }
+
+  &__figure {
+    @extend .salud__figure;
+  }
+
+  &__subtitle {
+    @extend .salud__subtitle;
+    color: $primary-color;
+  }
+
+  &__text {
+    @extend .salud__text;
+    color: $primary-color;
   }
 }

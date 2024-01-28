@@ -44,7 +44,7 @@ a {
   margin: 0 auto;
 }
 
-.title, .salud__title {
+.title, .salud__title, .hogar__title {
   font-size: 2.2rem;
   font-weight: 500;
   line-height: 2.6rem;
@@ -75,7 +75,7 @@ a {
 }
 
 /* HERO */
-.hero, .salud {
+.hero, .salud, .hogar {
   padding-bottom: 6rem;
 }
 .hero__container {
@@ -109,11 +109,10 @@ a {
 }
 
 /* SALUD */
-.salud__title {
+.salud__title, .hogar__title {
   margin-bottom: 3.2rem;
 }
-
-.cards {
+.salud__cards, .hogar__cards {
   padding-bottom: 2rem;
   display: grid;
   grid-template-columns: repeat(6, 17.8rem);
@@ -121,25 +120,38 @@ a {
   overflow-x: scroll;
   scroll-snap-type: x mandatory;
 }
-
-.card {
+.salud__card, .hogar__card {
   scroll-snap-align: center;
   padding: 3.2rem 2.4rem;
   border-radius: 0.8rem;
   background-color: #FFDAC6;
 }
-.card__figure {
+.salud__figure, .hogar__figure {
   width: 13.2rem;
   margin-bottom: 0.8rem;
 }
-.card__title {
+.salud__subtitle, .hogar__subtitle {
   margin-bottom: 0.4rem;
   font-size: 1.3rem;
   font-weight: 700;
   line-height: 1.7rem;
 }
-.card__text {
+.salud__text, .hogar__text {
   font-size: 1.2rem;
   font-weight: 400;
   line-height: 1.6rem;
+}
+
+/* HOGAR */
+.hogar__title {
+  margin-bottom: 3.2rem;
+}
+.hogar__card {
+  background-color: #BABD8D;
+}
+.hogar__subtitle {
+  color: #FFEFE7;
+}
+.hogar__text {
+  color: #FFEFE7;
 }/*# sourceMappingURL=style.css.map */
