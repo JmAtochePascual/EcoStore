@@ -62,7 +62,7 @@ a {
 }
 
 /* HERO */
-.hero, .estilos, .hogar, .salud {
+.hero, .estilos, .nosotros, .hogar, .salud {
   padding-bottom: 6rem;
 }
 .hero__container {
@@ -195,6 +195,40 @@ a {
   font-weight: 400;
   line-height: 1.8rem;
   color: #FFEFE7;
+}
+
+/* NOSOTROS */
+.nosotros__container {
+  width: 95%;
+  max-width: 144rem;
+  margin: 0 auto;
+}
+.nosotros__title {
+  margin-bottom: 3.2rem;
+  font-size: 2.2rem;
+  font-weight: 500;
+  line-height: 2.6rem;
+}
+.nosotros__content {
+  width: 90%;
+  max-width: 80rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  justify-items: center;
+  gap: 2rem;
+}
+.nosotros__info {
+  max-width: 30rem;
+  display: grid;
+  justify-items: center;
+  gap: 1.6rem;
+}
+.nosotros__text {
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.8rem;
+  text-align: center;
 }
 
 /* ESTILOS */

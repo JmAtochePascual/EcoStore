@@ -225,6 +225,41 @@ a {
   }
 }
 
+/* NOSOTROS */
+.nosotros {
+  @extend .hero;
+
+  &__container {
+    @include container();
+  }
+
+  &__title {
+    @include font-title();
+  }
+
+  &__content {
+    width: 90%;
+    max-width: 80rem;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, (minmax(20rem, 1fr)));
+    justify-items: center;
+    gap: 2rem;
+  }
+
+  &__info {
+    max-width: 30rem;
+    display: grid;
+    justify-items: center;
+    gap: 1.6rem;
+  }
+
+  &__text {
+    @include font-text();
+    text-align: center;
+  }
+}
+
 /* ESTILOS */
 
 .estilos {
