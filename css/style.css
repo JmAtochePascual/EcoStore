@@ -65,6 +65,11 @@ a {
 .hero, .encuentranos, .estilos, .nosotros, .hogar, .salud {
   padding-bottom: 6rem;
 }
+@media (min-width: 768px) {
+  .hero, .encuentranos, .estilos, .nosotros, .hogar, .salud {
+    padding-bottom: 8rem;
+  }
+}
 .hero__container {
   width: 95%;
   max-width: 144rem;
@@ -148,6 +153,13 @@ a {
   font-weight: 500;
   line-height: 2.6rem;
 }
+@media (min-width: 768px) {
+  .salud__title {
+    margin-bottom: 3.6rem;
+    font-size: 2.8rem;
+    line-height: 3.2rem;
+  }
+}
 .salud__cards {
   margin: 0 auto;
   padding-bottom: 2rem;
@@ -156,6 +168,13 @@ a {
   gap: 2.6rem;
   overflow-x: scroll;
   scroll-snap-type: x mandatory;
+}
+@media (min-width: 768px) {
+  .salud__cards {
+    grid-template-columns: repeat(3, 1fr);
+    overflow-x: unset;
+    scroll-snap-type: unset;
+  }
 }
 .salud .card {
   scroll-snap-align: center;
@@ -176,6 +195,13 @@ a {
   font-weight: 700;
   line-height: 1.7rem;
   margin-bottom: 0.8rem;
+}
+@media (min-width: 768px) {
+  .salud .card__subtitle {
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 2.2rem;
+  }
 }
 .salud .card__text {
   font-size: 1.4rem;
@@ -201,6 +227,13 @@ a {
   font-size: 2.2rem;
   font-weight: 500;
   line-height: 2.6rem;
+}
+@media (min-width: 768px) {
+  .hogar__title {
+    margin-bottom: 3.6rem;
+    font-size: 2.8rem;
+    line-height: 3.2rem;
+  }
 }
 .hogar__cards {
   margin: 0 auto;
@@ -232,6 +265,13 @@ a {
   margin-bottom: 0.8rem;
   color: #FFEFE7;
 }
+@media (min-width: 768px) {
+  .hogar .card__subtitle {
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 2.2rem;
+  }
+}
 .hogar .card__text {
   font-size: 1.4rem;
   font-weight: 400;
@@ -257,6 +297,13 @@ a {
   font-size: 2.2rem;
   font-weight: 500;
   line-height: 2.6rem;
+}
+@media (min-width: 768px) {
+  .nosotros__title {
+    margin-bottom: 3.6rem;
+    font-size: 2.8rem;
+    line-height: 3.2rem;
+  }
 }
 .nosotros__content {
   width: 90%;
@@ -299,6 +346,13 @@ a {
   font-weight: 500;
   line-height: 2.6rem;
 }
+@media (min-width: 768px) {
+  .estilos__title {
+    margin-bottom: 3.6rem;
+    font-size: 2.8rem;
+    line-height: 3.2rem;
+  }
+}
 .estilos__grid {
   width: 90%;
   margin: 0 auto;
@@ -320,6 +374,13 @@ a {
   font-weight: 500;
   line-height: 2.6rem;
 }
+@media (min-width: 768px) {
+  .encuentranos__title {
+    margin-bottom: 3.6rem;
+    font-size: 2.8rem;
+    line-height: 3.2rem;
+  }
+}
 .encuentranos .encuentranos__figure {
   max-width: 130rem;
   margin: 0 auto 3.2rem;
@@ -331,6 +392,13 @@ a {
   line-height: 2.6rem;
   margin-bottom: 0.8rem;
   color: #E86424;
+}
+@media (min-width: 768px) {
+  .encuentranos__lugar {
+    margin-bottom: 3.6rem;
+    font-size: 2.8rem;
+    line-height: 3.2rem;
+  }
 }
 .encuentranos__direccion {
   font-size: 1.4rem;
