@@ -142,6 +142,17 @@ a {
 
   &__links {
     display: none;
+
+    @media (min-width:1024px) {
+      display: flex;
+      gap: 1.6rem;
+    }
+  }
+
+  &__menuicon {
+    @media (min-width:1024px) {
+      display: none;
+    }
   }
 }
 
