@@ -240,7 +240,6 @@ a {
     scroll-snap-type: x mandatory;
 
     @media (min-width:768px) {
-      // grid-template-columns: repeat(6, 24rem);
       grid-template-columns: repeat(3, 1fr);
       overflow-x: unset;
       scroll-snap-type: unset;
@@ -266,13 +265,7 @@ a {
   }
 
   &__cards {
-    margin: 0 auto;
-    padding-bottom: 2rem;
-    display: grid;
-    grid-template-columns: repeat(6, 17.8rem);
-    gap: 2.6rem;
-    overflow-x: scroll;
-    scroll-snap-type: x mandatory;
+    @extend .salud__cards;
   }
 
   .card {

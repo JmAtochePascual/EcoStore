@@ -160,7 +160,7 @@ a {
     line-height: 3.2rem;
   }
 }
-.salud__cards {
+.salud__cards, .hogar__cards {
   margin: 0 auto;
   padding-bottom: 2rem;
   display: grid;
@@ -170,7 +170,7 @@ a {
   scroll-snap-type: x mandatory;
 }
 @media (min-width: 768px) {
-  .salud__cards {
+  .salud__cards, .hogar__cards {
     grid-template-columns: repeat(3, 1fr);
     overflow-x: unset;
     scroll-snap-type: unset;
@@ -234,15 +234,6 @@ a {
     font-size: 2.8rem;
     line-height: 3.2rem;
   }
-}
-.hogar__cards {
-  margin: 0 auto;
-  padding-bottom: 2rem;
-  display: grid;
-  grid-template-columns: repeat(6, 17.8rem);
-  gap: 2.6rem;
-  overflow-x: scroll;
-  scroll-snap-type: x mandatory;
 }
 .hogar .card {
   scroll-snap-align: center;
