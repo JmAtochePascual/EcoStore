@@ -47,7 +47,7 @@ a {
 }
 .header__menu {
   width: 95%;
-  max-width: 144rem;
+  max-width: 120rem;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -83,7 +83,7 @@ a {
 }
 .hero__container {
   width: 95%;
-  max-width: 144rem;
+  max-width: 120rem;
   margin: 0 auto;
   width: 90%;
   max-width: 55rem;
@@ -94,6 +94,13 @@ a {
   .hero__container {
     max-width: 120rem;
     grid-template-columns: 32rem 1fr;
+    grid-auto-flow: dense;
+    align-items: center;
+  }
+}
+@media (min-width: 1024px) {
+  .hero__container {
+    grid-template-columns: 50rem 1fr;
     grid-auto-flow: dense;
     align-items: center;
   }
@@ -119,8 +126,14 @@ a {
   .hero__title {
     margin-bottom: 3.2rem;
     font-size: 4rem;
-    font-weight: 700;
     line-height: 4.4rem;
+  }
+}
+@media (min-width: 1024px) {
+  .hero__title {
+    margin-bottom: 4.2rem;
+    font-size: 8rem;
+    line-height: 8.4rem;
   }
 }
 .hero__text {
@@ -141,6 +154,13 @@ a {
     margin-bottom: 3rem;
   }
 }
+@media (min-width: 1024px) {
+  .hero__text {
+    font-size: 2rem;
+    line-height: 2.8rem;
+    margin-bottom: 3rem;
+  }
+}
 .hero__button {
   max-width: 30rem;
   margin: 0 auto;
@@ -151,11 +171,16 @@ a {
   color: white;
   background-color: #E86424;
 }
+@media (min-width: 1024px) {
+  .hero__button {
+    margin: unset;
+  }
+}
 
 /* SALUD */
 .salud__container {
   width: 95%;
-  max-width: 144rem;
+  max-width: 120rem;
   margin: 0 auto;
 }
 .salud__title {
@@ -169,6 +194,11 @@ a {
     margin-bottom: 3.6rem;
     font-size: 2.8rem;
     line-height: 3.2rem;
+  }
+}
+@media (min-width: 1024px) {
+  .salud__title {
+    text-align: center;
   }
 }
 .salud__cards, .hogar__cards {
@@ -230,7 +260,7 @@ a {
 /* HOGAR */
 .hogar__container {
   width: 95%;
-  max-width: 144rem;
+  max-width: 120rem;
   margin: 0 auto;
 }
 .hogar__title {
@@ -244,6 +274,11 @@ a {
     margin-bottom: 3.6rem;
     font-size: 2.8rem;
     line-height: 3.2rem;
+  }
+}
+@media (min-width: 1024px) {
+  .hogar__title {
+    text-align: center;
   }
 }
 .hogar .card {
@@ -291,7 +326,7 @@ a {
 /* NOSOTROS */
 .nosotros__container {
   width: 95%;
-  max-width: 144rem;
+  max-width: 120rem;
   margin: 0 auto;
 }
 .nosotros__title {
@@ -305,6 +340,11 @@ a {
     margin-bottom: 3.6rem;
     font-size: 2.8rem;
     line-height: 3.2rem;
+  }
+}
+@media (min-width: 1024px) {
+  .nosotros__title {
+    text-align: center;
   }
 }
 .nosotros__content {
@@ -339,7 +379,7 @@ a {
 /* ESTILOS */
 .estilos__container {
   width: 95%;
-  max-width: 144rem;
+  max-width: 120rem;
   margin: 0 auto;
 }
 .estilos__title {
@@ -355,6 +395,11 @@ a {
     line-height: 3.2rem;
   }
 }
+@media (min-width: 1024px) {
+  .estilos__title {
+    text-align: center;
+  }
+}
 .estilos__grid {
   width: 90%;
   margin: 0 auto;
@@ -367,7 +412,7 @@ a {
 /* ENCUENTRANOS */
 .encuentranos__container {
   width: 95%;
-  max-width: 144rem;
+  max-width: 120rem;
   margin: 0 auto;
 }
 .encuentranos__title {
@@ -381,6 +426,11 @@ a {
     margin-bottom: 3.6rem;
     font-size: 2.8rem;
     line-height: 3.2rem;
+  }
+}
+@media (min-width: 1024px) {
+  .encuentranos__title {
+    text-align: center;
   }
 }
 .encuentranos .encuentranos__figure {
@@ -400,6 +450,11 @@ a {
     margin-bottom: 3.6rem;
     font-size: 2.8rem;
     line-height: 3.2rem;
+  }
+}
+@media (min-width: 1024px) {
+  .encuentranos__lugar {
+    text-align: center;
   }
 }
 .encuentranos__direccion {
@@ -422,7 +477,7 @@ a {
 }
 .footer__container {
   width: 95%;
-  max-width: 144rem;
+  max-width: 120rem;
   margin: 0 auto;
 }
 .footer__logo {
