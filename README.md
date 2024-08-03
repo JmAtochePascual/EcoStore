@@ -65,6 +65,6 @@ Este proyecto está bajo la licencia [MIT](https://opensource.org/licenses/MIT).
 
 ## 🌐Ver Proyecto en la WEB
 
-[ver Proyecto](https://jmatochepacual.github.io/EcoStore/)
+[ver Proyecto](https://jmatochepascual.github.io/EcoStore/)
 
 © 2024 ECO-STORE. Todos los derechos reservados.
