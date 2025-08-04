@@ -1,11 +1,10 @@
-$primary-color: #FFEFE7;
-$secundary-color: #FFDAC6;
-$tertiary-color: #BABD8D;
-$primary-text-color: #7C6A0A;
-$orange-color: #E86424;
-$orange-light-color: #FA9500;
-$font-family: 'IBM Plex Sans', sans-serif;
-
+$primary-color: #ffefe7;
+$secundary-color: #ffdac6;
+$tertiary-color: #babd8d;
+$primary-text-color: #7c6a0a;
+$orange-color: #e86424;
+$orange-light-color: #fa9500;
+$font-family: "IBM Plex Sans", sans-serif;
 
 /* MIXINS */
 
@@ -16,13 +15,13 @@ $font-family: 'IBM Plex Sans', sans-serif;
   font-weight: 500;
   line-height: 2.6rem;
 
-  @media (min-width:768px) {
+  @media (min-width: 768px) {
     margin-bottom: 3.6rem;
     font-size: 2.8rem;
     line-height: 3.2rem;
   }
 
-  @media (min-width:1024px) {
+  @media (min-width: 1024px) {
     text-align: center;
   }
 }
@@ -32,7 +31,7 @@ $font-family: 'IBM Plex Sans', sans-serif;
   font-weight: 700;
   line-height: 1.7rem;
 
-  @media (min-width:768px) {
+  @media (min-width: 768px) {
     font-size: 1.8rem;
     font-weight: 700;
     line-height: 2.2rem;
@@ -44,7 +43,7 @@ $font-family: 'IBM Plex Sans', sans-serif;
   font-weight: 400;
   line-height: 1.8rem;
 
-  @media (min-width:768px) {
+  @media (min-width: 768px) {
     font-size: 1.6rem;
     font-weight: 400;
     line-height: 2.2rem;
@@ -55,13 +54,12 @@ $font-family: 'IBM Plex Sans', sans-serif;
   width: 95%;
   max-width: 120rem;
   margin: 0 auto;
-
 }
 
 @mixin card($color-fondo, $colortexto: null) {
   scroll-snap-align: center;
   padding: 3.2rem 2.4rem;
-  border-radius: .8rem;
+  border-radius: 0.8rem;
   background-color: $color-fondo;
 
   &__figure {
@@ -76,7 +74,7 @@ $font-family: 'IBM Plex Sans', sans-serif;
 
   &__subtitle {
     @include font-subtitle();
-    margin-bottom: .8rem;
+    margin-bottom: 0.8rem;
     color: $colortexto;
   }
 
@@ -147,14 +145,14 @@ a {
   &__links {
     display: none;
 
-    @media (min-width:1024px) {
+    @media (min-width: 1024px) {
       display: flex;
       gap: 1.6rem;
     }
   }
 
   &__menuicon {
-    @media (min-width:1024px) {
+    @media (min-width: 1024px) {
       display: none;
     }
   }
@@ -165,7 +163,7 @@ a {
 .hero {
   padding-bottom: 6rem;
 
-  @media (min-width:768px) {
+  @media (min-width: 768px) {
     padding-bottom: 8rem;
   }
 
@@ -176,14 +174,14 @@ a {
     display: grid;
     gap: 1.6rem;
 
-    @media (min-width:768px) {
+    @media (min-width: 768px) {
       max-width: 120rem;
       grid-template-columns: 32rem 1fr;
       grid-auto-flow: dense;
       align-items: center;
     }
 
-    @media (min-width:1024px) {
+    @media (min-width: 1024px) {
       grid-template-columns: 50rem 1fr;
       grid-auto-flow: dense;
       align-items: center;
@@ -191,7 +189,7 @@ a {
   }
 
   &__figure {
-    @media (min-width:768px) {
+    @media (min-width: 768px) {
       max-width: 50rem;
       grid-column: 2;
       justify-self: end;
@@ -209,13 +207,13 @@ a {
     font-weight: 700;
     line-height: 3.6rem;
 
-    @media (min-width:768px) {
+    @media (min-width: 768px) {
       margin-bottom: 3.2rem;
       font-size: 4rem;
       line-height: 4.4rem;
     }
 
-    @media (min-width:1024px) {
+    @media (min-width: 1024px) {
       margin-bottom: 4.2rem;
       font-size: 8rem;
       line-height: 8.4rem;
@@ -226,11 +224,11 @@ a {
     @include font-text();
     margin-bottom: 2rem;
 
-    @media (min-width:768px) {
+    @media (min-width: 768px) {
       margin-bottom: 3rem;
     }
 
-    @media (min-width:1024px) {
+    @media (min-width: 1024px) {
       font-size: 2rem;
       line-height: 2.8rem;
       margin-bottom: 3rem;
@@ -247,7 +245,7 @@ a {
     color: white;
     background-color: $orange-color;
 
-    @media (min-width:1024px) {
+    @media (min-width: 1024px) {
       margin: unset;
     }
   }
@@ -275,12 +273,11 @@ a {
     overflow-x: scroll;
     scroll-snap-type: x mandatory;
 
-    @media (min-width:768px) {
+    @media (min-width: 768px) {
       grid-template-columns: repeat(3, 1fr);
       overflow-x: unset;
       scroll-snap-type: unset;
     }
-
   }
 
   .card {
@@ -388,7 +385,7 @@ a {
 
   &__lugar {
     @include font-title();
-    margin-bottom: .8rem;
+    margin-bottom: 0.8rem;
     color: $orange-color;
   }
 

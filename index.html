@@ -4,13 +4,54 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>EcoStore</title>
+
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="57x57" href="./src/favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="./src/favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="./src/favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="./src/favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="./src/favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="./src/favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="./src/favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="./src/favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="./src/favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="./src/favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./src/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="./src/favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./src/favicon/favicon-16x16.png">
+  <link rel="manifest" href="./src/favicon/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="./src/favicon/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+
+  <!-- Meta -->
+  <meta name="robots" content="index, follow">
+  <meta name="description"
+    content="La mejor tienda de productos ecológicos para ti y tu familia, con productos 100% naturales y ecológicos, con envíos a domicilio.">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="EcoStore">
+  <meta property="og:description"
+    content="La mejor tienda de productos ecológicos para ti y tu familia, con productos 100% naturales y ecológicos, con envíos a domicilio.">
+  <meta property="og:image" content="https://jmatochepascual.github.io/EcoStore/src/images/img-hero.png">
+  <meta property="og:url" content="https://jmatochepascual.github.io/EcoStore/">
+  <meta property="og:site_name" content="EcoStore">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="EcoStore">
+  <meta name="twitter:description"
+    content="La mejor tienda de productos ecológicos para ti y tu familia, con productos 100% naturales y ecológicos, con envíos a domicilio.">
+  <meta name="twitter:image" content="https://jmatochepascual.github.io/EcoStore/src/images/img-hero.png">
+  <meta name="twitter:site" content="@jmatochepascual">
+
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;700&display=swap" rel="stylesheet">
   <!-- Css -->
-  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./src/css/style.css">
+
+  <title>EcoStore</title>
 </head>
 
 <body>
@@ -20,18 +61,18 @@
 
       <nav class="header__links">
         <a href="#" class="header__link">
-          <img src="./assets/icons/user-circle.svg" alt="logo de usuario" width="24" height="24">
+          <img src="./src/icons/user-circle.svg" alt="logo de usuario" width="24" height="24">
         </a>
         <a href="#" class="header__link">
-          <img src="./assets/icons/heart.svg" alt="logo de like" width="24" height="24">
+          <img src="./src/icons/heart.svg" alt="logo de like" width="24" height="24">
         </a>
         <a href="#" class="header__link">
-          <img src="./assets/icons/shopping-cart.svg" alt="logo de carrito de compra" width="24" height="24">
+          <img src="./src/icons/shopping-cart.svg" alt="logo de carrito de compra" width="24" height="24">
         </a>
       </nav>
 
       <div class="header__menuicon">
-        <img src="./assets/icons/menu.svg" alt="icono de menu" width="24" height="24">
+        <img src="./src/icons/menu.svg" alt="icono de menu" width="24" height="24">
       </div>
     </div>
   </header>
@@ -39,10 +80,12 @@
   <main>
     <article class="hero">
       <div class="hero__container">
-        <figure class="hero__figure">
-          <img src="./assets/images/img-hero.png" class="hero__img" alt="imagen principal de producto" width="288"
+        <picture class="hero__figure">
+          <source srcset="./src/images/img-hero.avif" type="image/avif">
+          <source srcset="./src/images/img-hero.webp" type="image/webp">
+          <img src="./src/images/img-hero.png" class="hero__img" alt="imagen principal de producto" width="288"
             height="326">
-        </figure>
+        </picture>
 
         <div class="hero__content">
           <h1 class="title hero__title">Impacto Ecológico</h1>
@@ -61,7 +104,12 @@
         <div class="salud__cards">
           <article class="card">
             <figure class="card__figure">
-              <img src="./assets/images/img-01.png" class="card__img" alt="imagen del producto">
+              <picture>
+                <source srcset="./src/images/img-01.avif" type="image/avif" loading="lazy">
+                <source srcset="./src/images/img-01.webp" type="image/webp" loading="lazy">
+                <img src="./src/images/img-01.png" class="card__img" alt="imagen del producto cepillo de bambú"
+                  loading="lazy">
+              </picture>
             </figure>
             <h3 class="card__subtitle">Cepillo de bambú</h3>
             <p class="card__text">Paquete de 2 unidades hecho 100% de materiales ecológicos excelente producto para los
@@ -69,7 +117,12 @@
           </article>
           <article class="card">
             <figure class="card__figure">
-              <img src="./assets/images/img-02.png" class="card__img" alt="imagen del producto">
+              <picture>
+                <source srcset="./src/images/img-02.avif" type="image/avif" loading="lazy">
+                <source srcset="./src/images/img-02.webp" type="image/webp" loading="lazy">
+                <img src="./src/images/img-02.png" class="card__img" alt="imagen del producto crema para manos"
+                  loading="lazy">
+              </picture>
             </figure>
             <h3 class="card__subtitle">Crema para manos</h3>
             <p class="card__text">Crema hidratante con eucalipto ayuda al cuidado de la piel mejora la textura de la
@@ -77,7 +130,12 @@
           </article>
           <article class="card">
             <figure class="card__figure">
-              <img src="./assets/images/img-03.png" class="card__img" alt="imagen del producto">
+              <picture>
+                <source srcset="./src/images/img-03.avif" type="image/avif" loading="lazy">
+                <source srcset="./src/images/img-03.webp" type="image/webp" loading="lazy">
+                <img src="./src/images/img-03.png" class="card__img" alt="imagen del producto serum hidratante"
+                  loading="lazy">
+              </picture>
             </figure>
             <h3 class="card__subtitle">Serum hidratante</h3>
             <p class="card__text">Sérum hecho a base de extractos naturales y ácido hialurónico excellente para el
@@ -85,7 +143,12 @@
           </article>
           <article class="card">
             <figure class="card__figure">
-              <img src="./assets/images/img-04.png" class="card__img" alt="imagen del producto">
+              <picture>
+                <source srcset="./src/images/img-04.avif" type="image/avif" loading="lazy">
+                <source srcset="./src/images/img-04.webp" type="image/webp" loading="lazy">
+                <img src="./src/images/img-04.png" class="card__img" alt="imagen del producto kit de viaje"
+                  loading="lazy">
+              </picture>
             </figure>
             <h3 class="card__subtitle">Kit de viaje</h3>
             <p class="card__text">Incluye peine y cepillo de bambú, jabón orgánico de eucalipto y shampoo tamaño de
@@ -93,7 +156,12 @@
           </article>
           <article class="card">
             <figure class="card__figure">
-              <img src="./assets/images/img-05.png" class="card__img" alt="imagen del producto">
+              <picture>
+                <source srcset="./src/images/img-05.avif" type="image/avif" loading="lazy">
+                <source srcset="./src/images/img-05.webp" type="image/webp" loading="lazy">
+                <img src="./src/images/img-05.png" class="card__img" alt="imagen del producto set de jabones"
+                  loading="lazy">
+              </picture>
             </figure>
             <h3 class="card__subtitle">Set de jabones</h3>
             <p class="card__text">Paquete de 2 unidades jabón de carbón activado con coco. con olor a fruto natural
@@ -101,7 +169,12 @@
           </article>
           <article class="card">
             <figure class="card__figure">
-              <img src="./assets/images/img-06.png" class="card__img" alt="imagen del producto">
+              <picture>
+                <source srcset="./src/images/img-06.avif" type="image/avif" loading="lazy">
+                <source srcset="./src/images/img-06.webp" type="image/webp" loading="lazy">
+                <img src="./src/images/img-06.png" class="card__img" alt="imagen del producto kit de skincare"
+                  loading="lazy">
+              </picture>
             </figure>
             <h3 class="card__subtitle">Kit de skincare</h3>
             <p class="card__text">Incluye 2 rodillos y una gua sashet para pareja un regalo perfecto para tu compañero
@@ -118,7 +191,12 @@
         <div class="hogar__cards">
           <article class="card">
             <figure class="card__figure">
-              <img src="./assets/images/img-07.png" class="card__img" alt="imagen del producto">
+              <picture>
+                <source srcset="./src/images/img-07.avif" type="image/avif" loading="lazy">
+                <source srcset="./src/images/img-07.webp" type="image/webp" loading="lazy">
+                <img src="./src/images/img-07.png" class="card__img" alt="imagen del producto velador de aceite"
+                  loading="lazy">
+              </picture>
             </figure>
             <h3 class="card__subtitle">Cepillo de bambú</h3>
             <p class="card__text">Paquete de 2 unidades hecho 100% de materiales ecológicos excelente producto para los
@@ -126,7 +204,12 @@
           </article>
           <article class="card">
             <figure class="card__figure">
-              <img src="./assets/images/img-08.png" class="card__img" alt="imagen del producto">
+              <picture>
+                <source srcset="./src/images/img-08.avif" type="image/avif" loading="lazy">
+                <source srcset="./src/images/img-08.webp" type="image/webp" loading="lazy">
+                <img src="./src/images/img-08.png" class="card__img" alt="imagen del producto velador de aceite"
+                  loading="lazy">
+              </picture>
             </figure>
             <h3 class="card__subtitle">Cepillo de bambú</h3>
             <p class="card__text">Paquete de 2 unidades hecho 100% de materiales ecológicos excelente producto para los
@@ -134,7 +217,12 @@
           </article>
           <article class="card">
             <figure class="card__figure">
-              <img src="./assets/images/img-09.png" class="card__img" alt="imagen del producto">
+              <picture>
+                <source srcset="./src/images/img-09.avif" type="image/avif" loading="lazy">
+                <source srcset="./src/images/img-09.webp" type="image/webp" loading="lazy">
+                <img src="./src/images/img-09.png" class="card__img" alt="imagen del producto velador de aceite"
+                  loading="lazy">
+              </picture>
             </figure>
             <h3 class="card__subtitle">Cepillo de bambú</h3>
             <p class="card__text">Paquete de 2 unidades hecho 100% de materiales ecológicos excelente producto para los
@@ -142,7 +230,12 @@
           </article>
           <article class="card">
             <figure class="card__figure">
-              <img src="./assets/images/img-10.png" class="card__img" alt="imagen del producto">
+              <picture>
+                <source srcset="./src/images/img-10.avif" type="image/avif" loading="lazy">
+                <source srcset="./src/images/img-10.webp" type="image/webp" loading="lazy">
+                <img src="./src/images/img-10.png" class="card__img" alt="imagen del producto velador de aceite"
+                  loading="lazy">
+              </picture>
             </figure>
             <h3 class="card__subtitle">Cepillo de bambú</h3>
             <p class="card__text">Paquete de 2 unidades hecho 100% de materiales ecológicos excelente producto para los
@@ -150,7 +243,12 @@
           </article>
           <article class="card">
             <figure class="card__figure">
-              <img src="./assets/images/img-11.png" class="card__img" alt="imagen del producto">
+              <picture>
+                <source srcset="./src/images/img-11.avif" type="image/avif" loading="lazy">
+                <source srcset="./src/images/img-11.webp" type="image/webp" loading="lazy">
+                <img src="./src/images/img-11.png" class="card__img" alt="imagen del producto velador de aceite"
+                  loading="lazy">
+              </picture>
             </figure>
             <h3 class="card__subtitle">Cepillo de bambú</h3>
             <p class="card__text">Paquete de 2 unidades hecho 100% de materiales ecológicos excelente producto para los
@@ -158,7 +256,12 @@
           </article>
           <article class="card">
             <figure class="card__figure">
-              <img src="./assets/images/img-12.png" class="card__img" alt="imagen del producto">
+              <picture>
+                <source srcset="./src/images/img-12.avif" type="image/avif" loading="lazy">
+                <source srcset="./src/images/img-12.webp" type="image/webp" loading="lazy">
+                <img src="./src/images/img-12.png" class="card__img" alt="imagen del producto velador de aceite"
+                  loading="lazy">
+              </picture>
             </figure>
             <h3 class="card__subtitle">Cepillo de bambú</h3>
             <p class="card__text">Paquete de 2 unidades hecho 100% de materiales ecológicos excelente producto para los
@@ -173,16 +276,12 @@
         <h2 class="nosotros__title">¿Por qué nosotros?</h2>
         <div class="nosotros__content">
           <div class="nosotros__info">
-            <figure>
-              <img src="./assets/icons/earth-logo-1.svg" alt="imagen del mundo animado">
-            </figure>
+            <img src="./src/icons/earth-logo-1.svg" alt="imagen del mundo animado" loading="lazy">
             <p class="nosotros__text">Compromiso con el medio ambiente garantizando
               el uso de materiales 100% reciclables.</p>
           </div>
           <div class="nosotros__info">
-            <figure>
-              <img src="./assets/icons/eco-logo-1.svg" alt="imagen del mundo animado">
-            </figure>
+            <img src="./src/icons/eco-logo-1.svg" alt="imagen del mundo animado" loading="lazy">
             <p class="nosotros__text">Innovando con estilo
               el diseño de nuestros muebles es único creado por excelentes diseñadores.</p>
           </div>
@@ -194,13 +293,25 @@
         <h2 class="estilos__title">Galería de estilos</h2>
         <div class="estilos__grid">
           <figure class="estilos__figure">
-            <img src="./assets/images/img-card-01.png" alt="imagen de estilo del hogar">
+            <picture>
+              <source srcset="./src/images/img-card-01.avif" type="image/avif" loading="lazy">
+              <source srcset="./src/images/img-card-01.webp" type="image/webp" loading="lazy">
+              <img src="./src/images/img-card-01.png" alt="imagen de estilo del hogar moderno" loading="lazy">
+            </picture>
           </figure>
           <figure class="estilos__figure">
-            <img src="./assets/images/img-card-02.png" alt="imagen de estilo del hogar">
+            <picture>
+              <source srcset="./src/images/img-card-02.avif" type="image/avif" loading="lazy">
+              <source srcset="./src/images/img-card-02.webp" type="image/webp" loading="lazy">
+              <img src="./src/images/img-card-02.png" alt="imagen de estilo del hogar minimalista" loading="lazy">
+            </picture>
           </figure>
           <figure class="estilos__figure">
-            <img src="./assets/images/img-card-03.png" alt="imagen de estilo del hogar">
+            <picture>
+              <source srcset="./src/images/img-card-03.avif" type="image/avif" loading="lazy">
+              <source srcset="./src/images/img-card-03.webp" type="image/webp" loading="lazy">
+              <img src="./src/images/img-card-03.png" alt="imagen de estilo del hogar vintage" loading="lazy">
+            </picture>
           </figure>
         </div>
       </div>
@@ -211,7 +322,11 @@
         <h2 class="encuentranos__title">Encuéntranos en</h2>
 
         <figure class="encuentranos__figure">
-          <img src="./assets/images/img-mapa.png" alt="imagen de mapa" class="encuentranos__img">
+          <picture>
+            <source srcset="./src/images/img-mapa.avif" type="image/avif" loading="lazy">
+            <source srcset="./src/images/img-mapa.webp" type="image/webp" loading="lazy">
+            <img src="./src/images/img-mapa.png" alt="imagen de mapa" class="encuentranos__img" loading="lazy">
+          </picture>
         </figure>
 
         <p class="encuentranos__lugar">Centro Mayor Centro Comercial </p>
@@ -234,9 +349,9 @@
       </nav>
 
       <div class="footer__redes">
-        <img src="./assets/icons/instagram-logo.svg" alt="logo de instagram" width="24">
-        <img src="./assets/icons/facebook-logo.svg" alt="logo de facebook" width="24">
-        <img src="./assets/icons/twitter-logo.svg" alt="logo de twettwer" width="24">
+        <img src="./src/icons/instagram-logo.svg" alt="logo de instagram" width="24">
+        <img src="./src/icons/facebook-logo.svg" alt="logo de facebook" width="24">
+        <img src="./src/icons/twitter-logo.svg" alt="logo de twettwer" width="24">
       </div>
     </div>
   </footer>
