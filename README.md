@@ -4,11 +4,10 @@ Bienvenido a ECO-STORE, una landing page moderna y responsive enfocada en mostra
 
 ## Caracteristicas
 
-- **Metodología BEM**: Nomenclatura de clases organizada y mantenible.
-- **Mobile First**: Desarrollo orientado primero a dispositivos móviles.
-- **Media Queries**: Diseño adaptativo para diferentes tamaños de pantalla.
-- **Optimización SEO**: Metadatos y estructura optimizada para buscadores.
-- **Favicon**: Conjunto completo de iconos para diferentes dispositivos.
+- Desarrollo orientado primero a dispositivos móviles.
+- Diseño adaptativo para diferentes tamaños de pantalla.
+- Metadatos y estructura optimizada para buscadores.
+- Conjunto completo de iconos para diferentes dispositivos.
 
 ## Tecnologías
 
@@ -18,17 +17,18 @@ Bienvenido a ECO-STORE, una landing page moderna y responsive enfocada en mostra
 
 - **HTML5**: Lenguaje de marcado para estructurar el contenido de la página.
 - **CSS3**: Lenguaje de estilos utilizado para definir la presentación visual y el diseño responsivo.
-- **Sass**: Preprocesador CSS para agilizar el desarrollo de estilos.
+- **Sass**: Lenguaje de preprocesador CSS que permite escribir CSS de manera más eficiente y mantenible.
 
-## Estructura
+## Estructura del proyecto
 
-- **assets/**: Carpeta que contiene los recursos estáticos
-  - **icons/**: Subcarpeta con iconos SVG utilizados en la página
-  - **images/**: Subcarpeta con imágenes utilizadas en la página
-- **css/**: Carpeta que contiene los archivos CSS compilados
-- **scss/**: Carpeta que contiene los archivos fuente de Sass
-  - **style.scss**: Archivo principal de estilos Sass
-- **index.html**: Página principal de la tienda
+- **src:** Directorio que contiene el código fuente del proyecto.
+  - **css:** Directorio que contiene los archivos de estilos compilados.
+  - **images:** Directorio que contiene las imágenes del proyecto.
+  - **favicon:** Directorio que contiene los archivos del favicon.
+  - **icons:** Directorio que contiene los archivos de iconos.
+  - **scss:** Directorio que contiene los archivos de estilos base.
+- **index.html:** Archivo principal que contiene el código HTML del proyecto.
+- **README.md:** Archivo que contiene la documentación del proyecto.
 
 ## Instalación
 
@@ -41,7 +41,7 @@ Una vez instalados los plugins, asegúrate de:
 
 1. Tener habilitado el Live Sass Compiler.
 
-2. Configurar la ruta de salida del CSS compilado a la carpeta `/css`.
+2. Configurar la ruta de salida del CSS compilado a la carpeta `./src/css`.
 
 3. Guardar los cambios para activar la compilación automática.
 
@@ -89,4 +89,4 @@ Si deseas contribuir al proyecto, por favor sigue estos pasos en orden:
 
 Este proyecto se encuentra disponible bajo la licencia MIT. Puedes consultar los términos completos [aquí](https://opensource.org/licenses/MIT).
 
-Desarrollado con 💚 por JMCode | © 2025 - Transformando ideas en soluciones digitales
+<p align="center" style="margin-top: 120px;">Desarrollado con 🤍 por JMCode | Transformando ideas en soluciones digitales</p>
